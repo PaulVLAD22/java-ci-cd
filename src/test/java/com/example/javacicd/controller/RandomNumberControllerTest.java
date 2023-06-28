@@ -13,7 +13,7 @@ class RandomNumberControllerTest {
 
     @Test
     void randomNumberInBoundsTest() {
-        assertThat(101 > numberController.getRandomNumber()).isTrue();
+        assertThat(101).isGreaterThan(numberController.getRandomNumber());
     }
 
 }

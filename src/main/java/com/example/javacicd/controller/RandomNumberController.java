@@ -12,7 +12,6 @@ public class RandomNumberController {
 
     @GetMapping
     public int getRandomNumber() {
-        System.out.println("Da");
         int min = 0;
         int max = 100;
         return ThreadLocalRandom.current().nextInt(min, max + 1);
